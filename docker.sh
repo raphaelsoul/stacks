@@ -1,3 +1,4 @@
+#!/bin/bash
 # docker env shell for rhel on aws
 
 sudo yum -y update
