@@ -35,3 +35,4 @@ sudo chmod 700 /home/jenkins/.ssh
 sudo chmod 600 /home/jenkins/.ssh/*
 sudo chown -R jenkins:jenkins /home/jenkins/.ssh
 sudo gpasswd -a jenkins docker
+sudo yum install -y java
