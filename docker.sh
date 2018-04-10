@@ -2,7 +2,7 @@
 
 sudo useradd jenkins
 sudo mkdir -p /home/jenkins/.ssh
-sudo echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3UGoDlb/sNm8xsNC4zNMvw4OkcQ9lwhAlhFJg1TA0NAFaePsVS4j2YwKEdAJLSxOXmmIm5So5qPH1VOVTXaPxT+cesLoaFJ0a1GGGaGEovqy/OPSm7Uvczx9rfliNW2n2IIG/ssw9e+ogryhoB/kOg65X5Ub0/1/SjCELd5mill8lGXoRfPI0GhLF7G+Yo1KwFY7Boy4e7CjCLhAvpN2zZ7Ge1kRUBLrvRnugQmYTdwn94wHiB5WJDDISTWVamvoC3kEIm8BzqfVGHafm1ZtsJWSGb/rAVXsHH2caIxp/Ia8iz7Y/oPa4X1NjwuGrIFSJoSPpdc6exzs14jsLp9uV raphaelsoul@Koishi-no-MBP.local' > /home/jenkins/.ssh/authorized_keys
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3UGoDlb/sNm8xsNC4zNMvw4OkcQ9lwhAlhFJg1TA0NAFaePsVS4j2YwKEdAJLSxOXmmIm5So5qPH1VOVTXaPxT+cesLoaFJ0a1GGGaGEovqy/OPSm7Uvczx9rfliNW2n2IIG/ssw9e+ogryhoB/kOg65X5Ub0/1/SjCELd5mill8lGXoRfPI0GhLF7G+Yo1KwFY7Boy4e7CjCLhAvpN2zZ7Ge1kRUBLrvRnugQmYTdwn94wHiB5WJDDISTWVamvoC3kEIm8BzqfVGHafm1ZtsJWSGb/rAVXsHH2caIxp/Ia8iz7Y/oPa4X1NjwuGrIFSJoSPpdc6exzs14jsLp9uV raphaelsoul@Koishi-no-MBP.local' | sudo tee /home/jenkins/.ssh/authorized_keys
 
 sudo chmod 700 /home/jenkins/.ssh
 sudo chmod 600 /home/jenkins/.ssh/authorized_keys
