@@ -17,6 +17,9 @@ sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
 
+# add epel repo for pigz
+sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
 # for AWS
 sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
 
