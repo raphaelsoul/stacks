@@ -34,3 +34,4 @@ sudo echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3UGoDlb/sNm8xsNC4zNMvw4OkcQ9lw
 sudo chmod 700 /home/jenkins/.ssh
 sudo chmod 600 /home/jenkins/.ssh/*
 sudo chown -R jenkins:jenkins /home/jenkins/.ssh
+sudo gpasswd -a jenkins docker
