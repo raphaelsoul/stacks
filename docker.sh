@@ -28,8 +28,9 @@ sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
 # see https://github.com/docker/for-linux/issues/21
 # sudo yum-config-manager --enable rhui-rhel-7-server-rhui-extras-rpms
 
-sudo yum update -y && sudo yum install -y docker-ce git java
-
+sudo yum update -y && sudo yum install -y git java
+# install target docker version
+sudo yum install sudo yum install -y docker-ce-17.12.1.ce-1.el7.centos.x86_64
 # avoid docker permission
 sudo gpasswd -a $USER docker
 sudo gpasswd -a jenkins docker
