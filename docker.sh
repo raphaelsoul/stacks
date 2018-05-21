@@ -31,10 +31,11 @@ sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
 sudo yum update -y && sudo yum install -y git java
 # install target docker version
 sudo yum install sudo yum install -y docker-ce-17.12.1.ce-1.el7.centos.x86_64
+sudo systemctl enable nginx.service
 # avoid docker permission
 sudo gpasswd -a $USER docker
 sudo gpasswd -a jenkins docker
-# sudo gpasswd -a ec2-user docker
+sudo gpasswd -a ec2-user docker
 
 # install docker-compose 
 sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
