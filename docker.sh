@@ -17,4 +17,4 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 
 sudo service docker start
-
+sudo systemctl enable docker.service
