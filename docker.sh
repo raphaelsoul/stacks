@@ -9,7 +9,7 @@ sudo yum-config-manager \
 
 sudo yum -y update
 
-sudo yum install sudo yum install -y docker-ce
+sudo yum install -y docker-ce
 
 # install docker-compose 
 sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
