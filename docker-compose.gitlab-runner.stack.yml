@@ -10,7 +10,7 @@ services:
       - "gitlab-runner-etc:/etc/gitlab-runner"
       - "gitlab-runner-home:/home/gitlab-runner"
     networks:
-      - core
+      - gitlab_runner_network
     deploy:
         mode: replicated
         replicas: ${RUNNER_REPLICAS}
@@ -24,3 +24,6 @@ volumes:
     external: true
   gitlab-runner-home:
     external: true
+
+networks:
+  gitlab_runner_network:
