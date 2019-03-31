@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # install python
-yum update && yum instlall -y yum-utils
+yum update -y && yum instlall -y yum-utils
 yum-buillddep -y python
 curl -O https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
 
@@ -10,7 +10,7 @@ cd Python-3.7.2
 ./configure
 make && make install
 
-echo "alias python='/usr/local/bin/python3'" >> /etc/profile.d/python.sh
+echo "alias python='/usr/local/bin/python3'" > /etc/profile.d/python.sh
 chmod 755 /etc/profile.d/python.sh
 source /etc/profile.d/python.sh
 
