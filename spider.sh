@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # install python
-yum update -y && yum instlall -y yum-utils
+yum update -y && yum install -y yum-utils
 yum-buillddep -y python
 curl -O https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
 
