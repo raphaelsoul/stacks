@@ -5,10 +5,10 @@ yum update -y \
   && yum install -y yum-utils epel-release
 
 /usr/bin/yum-builddep -y python \
-  && curl -O https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz \
-  && tar -xf Python-3.7.2.tgz \
-  && cd Python-3.7.2 \
-  && ./configure --enable-optimizations \
+  && curl -O https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz \
+  && tar -xf Python-3.7.3.tgz \
+  && cd Python-3.7.3 \
+  && ./configure \
   && make && make altinstall
 
 # install tor and privoxy
